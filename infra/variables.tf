@@ -13,3 +13,19 @@ variable "db_password" {
   description = "Password for the RDS database instance."
   default     = "samplepassword123"
 }
+
+
+variable "kube_config_path" {
+  description = "Chemin vers le fichier de configuration Kubernetes"
+  type        = string
+  
+  // Vous pouvez fournir une valeur par défaut ici ou la laisser vide pour la définir ailleurs
+  default     = ""
+}
+
+
+variable "velero_cloud_credentials" {
+  description = "Path to the Velero cloud credentials file"
+  type        = string
+}
+
