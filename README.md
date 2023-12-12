@@ -18,6 +18,10 @@ Code for [How to Deploy Django to Kubernetes: Part 2](https://youtube.com/live/X
  * [Helm](https://helm.sh/docs/intro/quickstart/#install-helm)
  * [AWS account](https://aws.amazon.com/free/)
 
+## Vérification
+  * vérifier la région dans velero.tf
+
+
 ## Commands
 
 Useful commands used in the tutorial.

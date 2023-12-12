@@ -12,7 +12,7 @@ module "eks" {
   vpc_id                               = module.vpc.vpc_id
   subnet_ids                           = module.vpc.private_subnets
   cluster_endpoint_public_access       = true
-  cluster_endpoint_public_access_cidrs = ["0.0.0.0/0"] # Update to your IP
+  cluster_endpoint_public_access_cidrs = ["0.0.0.0/0"] # ici je metterais mon ip
 
   iam_role_additional_policies = {
     AllowECRApp   = aws_iam_policy.allow_ecr_app.arn
